@@ -15,9 +15,21 @@ export const CollectionSection = () => {
           </div>
         </header>
         <div className="grid grid-cols-4 gap-4">
-          <CollectionCard imgSource="/card-2000.png" className="col-span-2" />
-          <CollectionCard imgSource="/business-card.png" className="" />
-          <CollectionCard imgSource="/summer-card.png" className="" />
+          <CollectionCard
+            imgSource="/card-2000.png"
+            imgSource2="/card-2000-2.png"
+            className="col-span-2"
+          />
+          <CollectionCard
+            imgSource="/business-card.png"
+            imgSource2="/business-card-2.png"
+            className=""
+          />
+          <CollectionCard
+            imgSource="/summer-card.png"
+            imgSource2="/summer-card-2.png"
+            className=""
+          />
         </div>
       </Container>
     </div>

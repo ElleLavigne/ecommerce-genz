@@ -1,3 +1,7 @@
+import animate from 'tailwindcss-animate'
+import animated from 'tailwindcss-animated'
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -18,5 +22,7 @@ module.exports = {
        },
     },
   },
-  plugins: [],
+  plugins: [
+    animate,animated
+  ],
 }

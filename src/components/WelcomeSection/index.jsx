@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Button } from "../Button"
 import { Container } from "../Container"
 import { SearchInput } from "../SearchInput"
@@ -14,23 +15,28 @@ export const WelcomeSection = () => {
           </div>
         </Container>
       </div>
-      <div className="border border-red-400 h-[90vh] relative">
-        <img
+      <div className="pt-[154px]  h-[90vh] relative">
+        {/* <img
           className="-z-10 inset-0 rounded-[50px] absolute w-full h-full object-cover"
           src="background.png"
           alt=""
+        /> */}
+        <Image
+          fill
+          className="-z-10 inset-0 rounded-[50px] absolute w-full h-full object-cover"
+          src="/background.png"
+          alt=""
         />
         <Container>
-        
-            <h1 className=" mt-[154px] text-[94px] text-white">
-              <span>We believe in</span>
-              <br />
-              <span>free fashion</span>
-            </h1>
-            <h2 className="text-[32px] text-white max-w-[668px]">
-              Fashion is an art of expression, and we take it very seriously.
-            </h2>
-          
+          {/* <span className="">We believe in</span> */}
+          <h1 className="app-fade text-[94px] text-white">We believe in</h1>
+
+          <h1 className="app-fade-2 text-[94px] text-white">free fashion</h1>
+          {/* <span>free fashion</span> */}
+
+          <h2 className="text-[32px] text-white max-w-[668px]">
+            Fashion is an art of expression, and we take it very seriously.
+          </h2>
         </Container>
       </div>
     </div>

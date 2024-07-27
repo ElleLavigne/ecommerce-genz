@@ -6,7 +6,6 @@
 body {
   color: #121210;
   font-family: "Montserrat", sans-serif;
-  padding: 0 32px;
   @apply font-medium;
 }
 * {

@@ -28,3 +28,16 @@ body {
 .card-shadow {
   box-shadow: 0 -1px 20px 0 rgb(165, 165, 165, 0.2);
 }
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 427px));
+  justify-content: center;
+  gap: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .products-container {
+    grid-template-columns: repeat(3, minmax(200px, 427px));
+  }
+}

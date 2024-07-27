@@ -1,3 +1,10 @@
+.app-delay-500 {
+  animation-delay: 500ms;
+}
+.app-delay-1000 {
+  animation-delay: 1s;
+}
+/* fade in */
 @keyframes fadein {
   from {
     opacity: 0;
@@ -14,19 +21,13 @@
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
-.app-delay-500 {
-  animation-delay: 500ms;
-}
-.app-delay-1000 {
-  animation-delay: 1s;
-}
-
+/* welcome-bg */
 @keyframes zoomOut {
-  from {
-    background-size: 150%;
+  0% {
+    background-size: 175%;
   }
-  to {
-    background-size: 100%;
+  100% {
+    background-size: 150%;
   }
 }
 
@@ -34,8 +35,32 @@
   background-image: url("/background.png");
   background-repeat: no-repeat;
   border-radius: 50px;
-  overflow: hidden;
-  animation: zoomOut 20s linear;
+  background-size: cover;
+}
+@media screen and (min-width: 1400px) {
+  .app-welcome-background {
+    animation: zoomOut 20s linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+}
+/* Levitate */
+@keyframes levitate {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-16px);
+    @apply shadow-2xl;
+  }
+}
+
+.app-levitate {
+  transition: all 500ms;
+  transform: translateY(0);
+}
+.app-levitate:hover {
+  animation: levitate 500ms ease-in-out;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }

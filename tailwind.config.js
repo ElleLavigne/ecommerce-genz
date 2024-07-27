@@ -14,7 +14,8 @@ module.exports = {
       },
       colors: {
         stroke: "#E9E9E9",
-      },
+        white: "#FFFCFF",
+       },
     },
   },
   plugins: [],

@@ -1,4 +1,3 @@
-
 import { Button } from "../Button"
 import { Container } from "../Container"
 import { SearchInput } from "../SearchInput"
@@ -14,14 +13,26 @@ export const WelcomeSection = () => {
             <SearchInput />
           </div>
         </Container>
-
-        {/* <select className="" name="Categoria" id="">
-          <option value="">Categoria</option>
-          <option value="beach">Praia</option>
-          <option value="gym">Academia</option>
-        </select> */}
       </div>
-      <img className="" src="background.png" alt="" />
+      <div className="border border-red-400 h-[90vh] relative">
+        <img
+          className="-z-10 inset-0 rounded-[50px] absolute w-full h-full object-cover"
+          src="background.png"
+          alt=""
+        />
+        <Container>
+        
+            <h1 className=" mt-[154px] text-[94px] text-white">
+              <span>We believe in</span>
+              <br />
+              <span>free fashion</span>
+            </h1>
+            <h2 className="text-[32px] text-white max-w-[668px]">
+              Fashion is an art of expression, and we take it very seriously.
+            </h2>
+          
+        </Container>
+      </div>
     </div>
   )
 }

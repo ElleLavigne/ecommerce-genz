@@ -15,7 +15,7 @@ export const WelcomeSection = () => {
           </div>
         </Container>
       </div>
-      <div className="pt-[64px] pb-[32px] lg:pt-[154px] lg:pb-[70px] px-6 min-h-[50vh] lg:min-h-[90vh] relative app-welcome-background">
+      <div className=" pt-[64px] pb-[32px] lg:pt-[154px] lg:pb-[70px] px-6 relative app-welcome-background">
         {/* <Image
           fill
           className="-z-10 inset-0 rounded-[50px] absolute w-full h-full object-cover app-welcome-image"

@@ -6,7 +6,7 @@ import { CollectionCard } from "./CollectionCard"
 
 export const CollectionSection = () => {
   return (
-    <div className="min-h-[500px]">
+    <div className="pb-[80px]">
       <Container>
         <header className="mb-6">
           <h1 className="app-title mb-4">Coleção</h1>
@@ -19,17 +19,32 @@ export const CollectionSection = () => {
             imgSource="/card-2000.png"
             imgSource2="/card-2000-2.png"
             className="col-span-2"
-          />
+          >
+            <Button variant={"secondary"}>Favoritar coleção</Button>
+            <Button variant={"secondary"} className="absolute top-8 right-8">
+              Anos 2000
+            </Button>
+          </CollectionCard>
           <CollectionCard
             imgSource="/business-card.png"
             imgSource2="/business-card-2.png"
             className=""
-          />
+          >
+            <Button variant={"secondary"}>Business</Button>
+            <Button variant={"secondary"} size="icon">
+              <img src="favorite.svg" />
+            </Button>
+          </CollectionCard>
           <CollectionCard
             imgSource="/summer-card.png"
             imgSource2="/summer-card-2.png"
             className=""
-          />
+          >
+            <Button variant={"secondary"}>Summer</Button>
+            <Button variant={"secondary"} size="icon">
+              <img src="favorite.svg" />
+            </Button>
+          </CollectionCard>
         </div>
       </Container>
     </div>

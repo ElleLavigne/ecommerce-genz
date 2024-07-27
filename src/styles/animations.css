@@ -44,7 +44,11 @@
     -webkit-animation-fill-mode: forwards;
   }
 }
-/* Levitate */
+@media screen and (max-width: 600px) {
+  .app-welcome-background {
+    background-position: 60%;
+  }
+} /* Levitate */
 @keyframes levitate {
   from {
     transform: translateY(0);

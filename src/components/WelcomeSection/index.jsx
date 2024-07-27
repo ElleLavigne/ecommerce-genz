@@ -6,8 +6,8 @@ import { SearchInput } from "../SearchInput"
 export const WelcomeSection = () => {
   return (
     <div className="max-w-[1763px] mx-auto  pb-[50px]">
-      <div className="mt-4 mb-4">
-        <Container>
+      <div className="mt-4 mb-4 min-h-4 w-full">
+        <Container className={"hidden md:block"}>
           <div className="flex items-center gap-6 justify-end">
             <Button>Masculino</Button>
             <Button>Feminino</Button>
@@ -15,7 +15,7 @@ export const WelcomeSection = () => {
           </div>
         </Container>
       </div>
-      <div className="pt-[154px] pb-[70px]  min-h-[90vh] max-h-[860px] relative app-welcome-background">
+      <div className="pt-[64px] pb-[32px] lg:pt-[154px] lg:pb-[70px] px-6 min-h-[50vh] lg:min-h-[90vh] relative app-welcome-background">
         {/* <Image
           fill
           className="-z-10 inset-0 rounded-[50px] absolute w-full h-full object-cover app-welcome-image"
@@ -23,17 +23,22 @@ export const WelcomeSection = () => {
           alt=""
         /> */}
         <Container className="">
-          <h1 className="app-fade text-[94px] text-white">We believe in</h1>
-          <h1 className="app-fade app-delay-500 text-[94px] text-white">
+          <h1 className="app-fade text-[42px] sm:text-[54px] lg:text-[94px] text-white">
+            We believe in
+          </h1>
+          <h1 className="app-fade app-delay-500 text-[42px] sm:text-[54px] lg:text-[94px] text-white">
             free fashion
           </h1>
-          <h2 className="text-[32px] text-white max-w-[668px] app-fade app-delay-1000">
+          <h2 className="mt-8 text-[20px] sm:text-[28px] lg:text-[32px] text-white max-w-[668px] app-fade app-delay-1000">
             Fashion is an art of expression, and we take it very seriously.
           </h2>
-          <div className="mt-[174px] w-full grid grid-cols-3 items-center place-items-center gap-4  ">
-            <div className="w-8"></div>
-            <Button className="animate-fade-up animate-delay-500" variant={"secondary"}>
-              conheça a coleção 2000
+          <div className="mt-[100px] lg:mt-[174px] w-full flex justify-center lg:grid lg:grid-cols-3 items-center place-items-center gap-4  ">
+            <div className="w-8 hidden lg:block"></div>
+            <Button
+              className="animate-fade-up animate-delay-500 text-ellipsis"
+              variant={"secondary"}
+            >
+              Conheça a coleção 2000
             </Button>
             <Card />
           </div>
@@ -45,7 +50,7 @@ export const WelcomeSection = () => {
 
 const Card = () => {
   return (
-    <div className="flex items-center gap-4 px-[20px] py-4 rounded-[20px] bg-white place-self-end cursor-pointer app-levitate">
+    <div className="hidden lg:flex items-center gap-4 px-[20px] py-4 rounded-[20px] bg-white place-self-end cursor-pointer app-levitate">
       <img
         src="welcome-sweater.png"
         alt="sweater"

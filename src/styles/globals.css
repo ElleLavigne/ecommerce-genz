@@ -9,6 +9,9 @@ body {
   padding: 0 32px;
   @apply font-medium;
 }
+* {
+  box-sizing: border-box;
+}
 
 @layer utilities {
   .text-balance {
@@ -31,12 +34,18 @@ body {
 
 .products-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 427px));
+  grid-template-columns: 1fr;
   justify-content: center;
   gap: 30px;
 }
 
 @media screen and (min-width: 600px) {
+  .products-container {
+    grid-template-columns: repeat(2, minmax(200px, 427px));
+  }
+}
+
+@media screen and (min-width: 900px) {
   .products-container {
     grid-template-columns: repeat(3, minmax(200px, 427px));
   }

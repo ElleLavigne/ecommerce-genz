@@ -14,11 +14,11 @@ export const CollectionSection = () => {
             <span className="block h-2 w-2 bg-black left-0 rounded-full top-[50%] translate-y-[-50%] "></span>
           </div>
         </header>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <CollectionCard
             imgSource="/card-2000.png"
             imgSource2="/card-2000-2.png"
-            className="col-span-2"
+            className="sm:col-span-2"
           >
             <Button variant={"secondary"}>Favoritar coleção</Button>
             <Button variant={"secondary"} className="absolute top-8 right-8">
